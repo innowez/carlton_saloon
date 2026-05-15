@@ -23,9 +23,9 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full h-[120px] flex flex-row items-center justify-between bg-white/[1%] fixed top-0 z-50 px-10 pt-10 pb-5 max-lg:p-5 max-md:h-[80px]">
-        {/* Left nav — hidden below md */}
-        <nav className="flex flex-row items-center gap-9 max-lg:gap-[15px] max-md:hidden">
+      <header className="w-full h-[120px] flex flex-row items-center justify-between bg-white/[1%] fixed top-0 z-50 px-10 pt-10 pb-5 max-lg:px-6 max-lg:py-5 max-lg:h-[80px]">
+        {/* Left nav — hidden below lg */}
+        <nav className="flex flex-row items-center gap-9 max-lg:hidden">
           {leftLinks.map(({ href, label }) => (
             <Link
               key={label}
@@ -37,9 +37,9 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Hamburger — shown below md */}
+        {/* Hamburger — shown below lg */}
         <button
-          className="hidden max-md:flex flex-col justify-center gap-[5px] cursor-pointer p-1 w-8 h-8"
+          className="hidden max-lg:flex flex-col justify-center gap-[5px] cursor-pointer p-1 w-8 h-8"
           onClick={() => setMenuOpen((o) => !o)}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
@@ -59,8 +59,8 @@ const Header = () => {
           <Image src={logo} alt="Carlton London" fill className="object-contain" />
         </div>
 
-        {/* Right nav — hidden below md */}
-        <div className="w-[446px] flex flex-row justify-end items-center gap-9 max-lg:gap-[15px] max-md:hidden">
+        {/* Right nav — hidden below lg */}
+        <div className="flex flex-row justify-end items-center gap-9 max-lg:hidden">
           {rightLinks.map(({ href, label }) => (
             <Link
               key={label}
@@ -76,12 +76,12 @@ const Header = () => {
         </div>
 
         {/* Right spacer — keeps logo centered on mobile */}
-        <div className="w-8 hidden max-md:block" />
+        <div className="w-8 hidden max-lg:block" />
       </header>
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <div className="fixed top-[80px] inset-x-0 z-40 md:hidden bg-black/95 backdrop-blur-md flex flex-col px-8 py-6 gap-0">
+        <div className="fixed top-[80px] inset-x-0 z-40 lg:hidden bg-black/95 backdrop-blur-md flex flex-col px-8 py-6 gap-0">
           {[...leftLinks, ...rightLinks].map(({ href, label }) => (
             <Link
               key={label}
