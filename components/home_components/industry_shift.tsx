@@ -1,5 +1,5 @@
 import Image from "next/image";
-import industryShiftImg from "@/assets/images/industry_shift.png";
+import industryShiftImg from "@/assets/images/home_images/industry_shift.png";
 import SectionLabel from "../shared/section_label";
 // import SectionLabel from "@/components/shared/section_label";
 

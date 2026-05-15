@@ -1,7 +1,7 @@
 import Image from "next/image";
-import standards from "@/assets/images/why_carlton_1.png";
-import consultation from "@/assets/images/why_calton_02.png";
-import membership from "@/assets/images/why_calton_3.png";
+import standards from "@/assets/images/home_images/why_carlton_1.png";
+import consultation from "@/assets/images/home_images/why_calton_02.png";
+import membership from "@/assets/images/home_images/why_calton_3.png";
 import SectionLabel from "@/components/shared/section_label";
 import type { StaticImageData } from "next/image";
 

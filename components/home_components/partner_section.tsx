@@ -1,6 +1,6 @@
 import Image from "next/image";
-import partnerImg from "@/assets/images/about_us_2.png";
-import interiorImg from "@/assets/images/about_us_1.png";
+import partnerImg from "@/assets/images/home_images/about_us_2.png";
+import interiorImg from "@/assets/images/home_images/about_us_1.png";
 import SectionLabel from "../shared/section_label";
 // import SectionLabel from "@/components/shared/section_label";
 

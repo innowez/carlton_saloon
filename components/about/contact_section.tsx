@@ -1,6 +1,6 @@
 import Image from "next/image";
 import formBg from "@/assets/images/form_bg.png";
-import formImage from "@/assets/images/form_image.png";
+import formImage from "@/assets/images/home_images/form_image.png";
 import SectionLabel from "@/components/shared/section_label";
 import Form from "@/components/shared/form";
 

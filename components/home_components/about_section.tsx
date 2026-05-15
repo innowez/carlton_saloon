@@ -1,6 +1,6 @@
 import Image from "next/image";
-import aboutUs1 from "@/assets/images/about_us_1.png";
-import aboutUs2 from "@/assets/images/about_us_2.png";
+import aboutUs1 from "@/assets/images/home_images/about_us_1.png";
+import aboutUs2 from "@/assets/images/home_images/about_us_2.png";
 import SectionLabel from "@/components/shared/section_label";
 
 const AboutSection = () => (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroBg from "@/assets/images/hero-bg.png";
+import heroBg from "@/assets/images/home_images/hero-bg.png";
 
 const HeroSection = () => {
   return (
