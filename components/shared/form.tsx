@@ -8,7 +8,7 @@ const Form = () => {
     <form className="flex flex-col gap-[72px]">
       <div className="flex flex-col gap-12">
         {/* Row 1 */}
-        <div className="flex gap-12">
+        <div className="flex gap-12 max-md:flex-col">
           <div className={fieldClass}>
             <label className={labelClass}>Full name</label>
             <input type="text" name="fullName" className={inputClass} />
@@ -20,7 +20,7 @@ const Form = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="flex gap-12">
+        <div className="flex gap-12 max-md:flex-col">
           <div className={fieldClass}>
             <label className={labelClass}>Phone</label>
             <input type="tel" name="phone" className={inputClass} />
