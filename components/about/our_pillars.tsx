@@ -40,10 +40,16 @@ const OurPillars = () => {
                 key={p.num}
                 className="w-[325px] max-w-full p-8 border border-pillar-border flex flex-col gap-[72px]"
               >
-                <span className="text-gold font-helvetica text-[25.6px]">{p.num}</span>
+                <span className="text-gold font-helvetica text-[25.6px]">
+                  {p.num}
+                </span>
                 <div className="flex flex-col gap-6">
-                  <span className="text-cream font-sans font-medium text-[36px]">{p.title}</span>
-                  <p className="text-muted font-helvetica text-xl leading-8 m-0 opacity-80">{p.desc}</p>
+                  <span className="text-cream font-sans font-medium text-[36px]">
+                    {p.title}
+                  </span>
+                  <p className="text-muted font-helvetica text-xl leading-8 m-0 opacity-80">
+                    {p.desc}
+                  </p>
                 </div>
               </div>
             ))}

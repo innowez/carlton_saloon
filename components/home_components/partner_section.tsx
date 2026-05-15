@@ -1,7 +1,8 @@
 import Image from "next/image";
 import partnerImg from "@/assets/images/about_us_2.png";
 import interiorImg from "@/assets/images/about_us_1.png";
-import SectionLabel from "@/components/shared/section_label";
+import SectionLabel from "../shared/section_label";
+// import SectionLabel from "@/components/shared/section_label";
 
 const PartnerSection = () => (
   <section className="w-full relative border-y border-gold">

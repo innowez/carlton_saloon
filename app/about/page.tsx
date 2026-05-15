@@ -1,9 +1,9 @@
 import AboutHero from "@/components/about/about_hero";
-import WhoWeAre from "@/components/about/who_we_are";
-import OurPillars from "@/components/about/our_pillars";
-import EbgGroup from "@/components/about/ebg_group";
 import BrandFace from "@/components/about/brand_face";
 import ContactSection from "@/components/about/contact_section";
+import EbgGroup from "@/components/about/ebg_group";
+import OurPillars from "@/components/about/our_pillars";
+import WhoWeAre from "@/components/about/who_we_are";
 
 export default function AboutPage() {
   return (

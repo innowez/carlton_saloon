@@ -6,10 +6,14 @@ const BrandFace = () => {
   return (
     <section className="w-full px-[66px] py-[100px]">
       <div className="max-w-[1440px] mx-auto flex gap-[58px] items-start max-lg:flex-col">
-
         {/* Left — portrait image */}
         <div className="relative w-[469px] h-[626px] shrink-0 border border-gold/15 overflow-hidden max-lg:w-full max-lg:h-[400px]">
-          <Image src={brandFace} alt="Brand Face" fill className="object-cover object-top" />
+          <Image
+            src={brandFace}
+            alt="Brand Face"
+            fill
+            className="object-cover object-top"
+          />
           <div className="absolute bottom-8 w-full flex justify-center">
             <span className="text-gold/40 font-sans text-base text-center whitespace-pre-line leading-relaxed">
               {"Official Brand Imagery\nLicensed & Approved Only"}
@@ -32,20 +36,20 @@ const BrandFace = () => {
                 </h3>
               </div>
               <p className="text-muted font-helvetica text-xl leading-8 text-justify m-0">
-                Mrunal Thakur represents Carlton Wellness as a figure of confidence, warmth, and
-                modern Indian womanhood — values that align with Carlton's wellness-led positioning.
-                Her association adds trust and aspiration to the brand narrative.
+                Mrunal Thakur represents Carlton Wellness as a figure of
+                confidence, warmth, and modern Indian womanhood — values that
+                align with Carlton's wellness-led positioning. Her association
+                adds trust and aspiration to the brand narrative.
               </p>
             </div>
 
             <p className="text-gold/60 font-helvetica text-sm leading-[18.5px] m-0">
-              Mrunal Thakur may be presented as the brand face for Carlton Wellness only with
-              approved official imagery and licensing. Her role is to amplify the brand proposition,
-              not substitute it.
+              Mrunal Thakur may be presented as the brand face for Carlton
+              Wellness only with approved official imagery and licensing. Her
+              role is to amplify the brand proposition, not substitute it.
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

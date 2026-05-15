@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import salonImg from "@/assets/images/location_page/our_salons.png";
-import SectionLabel from "@/components/shared/section_label";
+import SectionLabel from "../shared/section_label";
+// import SectionLabel from "@/components/shared/section_label";
 
 const salons = [
   {
@@ -30,7 +31,13 @@ const salons = [
 ];
 
 const PinIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    className="shrink-0"
+  >
     <path
       d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
       fill="rgba(216,200,184,1)"
@@ -39,9 +46,26 @@ const PinIcon = () => (
 );
 
 const ClockIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="shrink-0">
-    <circle cx="12" cy="12" r="9" stroke="rgba(216,200,184,1)" strokeWidth="2" />
-    <path d="M12 7v5l3 3" stroke="rgba(216,200,184,1)" strokeWidth="2" strokeLinecap="round" />
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    className="shrink-0"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="9"
+      stroke="rgba(216,200,184,1)"
+      strokeWidth="2"
+    />
+    <path
+      d="M12 7v5l3 3"
+      stroke="rgba(216,200,184,1)"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
   </svg>
 );
 
@@ -62,7 +86,9 @@ const SalonCard = ({
         {isNew ? "Newly Opened" : "Active"}
       </span>
     </div>
-    <h3 className="text-white font-sans font-normal text-[30px] leading-[40px] m-0">{title}</h3>
+    <h3 className="text-white font-sans font-normal text-[30px] leading-[40px] m-0">
+      {title}
+    </h3>
     <div className="h-px bg-gold/15" />
     <div className="flex flex-col gap-3">
       <div className="flex items-center gap-4">
@@ -74,7 +100,9 @@ const SalonCard = ({
         <span className="text-muted font-helvetica text-base">{hours}</span>
       </div>
       <div className="pl-10">
-        <span className="text-muted font-helvetica text-base opacity-80">{status}</span>
+        <span className="text-muted font-helvetica text-base opacity-80">
+          {status}
+        </span>
       </div>
     </div>
     <button className="mt-3 w-full px-6 py-4 border border-white rounded-[4px] bg-white/[2%] backdrop-blur-[5px] text-white font-helvetica text-base uppercase cursor-pointer hover:bg-white/10 transition-colors">
@@ -96,9 +124,20 @@ const SalonsSection = () => {
           </h2>
         </div>
         <div className="w-[405px] max-w-full h-12 bg-cream rounded-lg flex items-center px-4 gap-4 shrink-0">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="shrink-0">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="shrink-0"
+          >
             <circle cx="11" cy="11" r="7" stroke="#333" strokeWidth="2" />
-            <path d="M20 20l-3-3" stroke="#333" strokeWidth="2" strokeLinecap="round" />
+            <path
+              d="M20 20l-3-3"
+              stroke="#333"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
           </svg>
           <input
             type="text"

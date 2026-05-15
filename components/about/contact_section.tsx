@@ -7,10 +7,15 @@ import Form from "@/components/shared/form";
 const ContactSection = () => {
   return (
     <section className="w-full relative bg-page-bg" id="contact">
-
       {/* Background image area */}
       <div className="relative w-full h-[850px] overflow-hidden">
-        <Image src={formBg} alt="Contact Background" fill className="object-cover" priority={false} />
+        <Image
+          src={formBg}
+          alt="Contact Background"
+          fill
+          className="object-cover"
+          priority={false}
+        />
 
         {/* Left: label + heading */}
         <div className="absolute top-[88px] left-10 flex flex-col gap-[58px] z-10">
@@ -22,7 +27,13 @@ const ContactSection = () => {
 
         {/* Small decoration image */}
         <div className="absolute left-10 top-[444px] z-10 max-md:hidden">
-          <Image src={formImage} alt="" width={344} height={366} className="object-cover" />
+          <Image
+            src={formImage}
+            alt=""
+            width={344}
+            height={366}
+            className="object-cover"
+          />
         </div>
 
         {/* Form — right side */}
@@ -35,7 +46,6 @@ const ContactSection = () => {
       <div className="hidden max-lg:block px-10 py-16">
         <Form />
       </div>
-
     </section>
   );
 };

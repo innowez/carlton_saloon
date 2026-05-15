@@ -1,4 +1,6 @@
-import SectionLabel from "@/components/shared/section_label";
+// import SectionLabel from "@/components/shared/section_label";
+
+import SectionLabel from "../shared/section_label";
 
 const passports = [
   {

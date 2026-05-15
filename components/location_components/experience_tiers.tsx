@@ -1,4 +1,4 @@
-import SectionLabel from "@/components/shared/section_label";
+import SectionLabel from "../shared/section_label";
 
 const tiers = [
   {
@@ -27,7 +27,8 @@ const ExperienceTiers = () => (
       <SectionLabel text="Carlton Experience" />
     </div>
     <h2 className="text-cream font-sans font-semibold text-[48px] leading-none m-0 mb-16 max-lg:text-[36px]">
-      Every salon,<br />a distinct experience
+      Every salon,
+      <br />a distinct experience
     </h2>
     <div className="flex border border-gold/70 max-lg:flex-col">
       {tiers.map((tier, idx) => (
@@ -42,7 +43,9 @@ const ExperienceTiers = () => (
             .join(" ")
             .trim()}
         >
-          <span className="text-gold font-helvetica text-[26px]">✦ {tier.num}</span>
+          <span className="text-gold font-helvetica text-[26px]">
+            ✦ {tier.num}
+          </span>
           <div className="flex flex-col gap-6">
             <div>
               <h5 className="text-cream font-sans text-[36px] m-0 mb-3 max-lg:text-[28px]">

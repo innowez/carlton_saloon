@@ -63,7 +63,7 @@ const WhyCarlton = () => (
         {cards.map((card) => (
           <div
             key={card.title}
-            className="w-[440px] max-w-full shrink-0 max-lg:w-full max-lg:!mt-0"
+            className="w-[440px] max-w-full shrink-0 max-lg:w-full max-lg:mt-0!"
             style={{ marginTop: card.offset }}
           >
             <div
